@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bootstrap Autocomplete with Dynamic Data Load using PHP Ajax</title>
+	
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Bootstrap Autocomplete with Dynamic Data Load using PHP Ajax</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="typeahead.js"></script>
@@ -21,31 +27,44 @@
 	</style>	
 </head>
 <body>
+<div class=" columns">
+      <div class="column is-half is-centered container">
+	<form method='post' action='/fpdf181/tutorial/tuto2.php'>
 
-<form method='post' action='/fpdf181/tutorial/tuto2.php'>
+		<label class="demo-label3"></label><br/>
+		<input type="submit" name="search" value="Address Search">
 
-	<label class="demo-label3"></label><br/>
-	<input type="submit" name="search" value="Address Search">
+		
+		<div class="field">
+		  <label class="label">Search Country:</label>
+		  <div class="control">
+		    <input class="input" type="text" name="txtCountry" id="txtCountry" class="typeahead" placeholder="Candidate">
+		  </div>
+		  </div>
+		
+		<div class="field">
+		  <label class="label">Search Country:</label>
+		  <div class="control">
+		    <input class="input" type="text" name="leshope" id="leshope" class="typeahead" placeholder="Candidate">
+		  </div>
+		  </div>
 	
-	
-	<div class="bgcolor">
-		<label class="demo-label">Search Country:</label><br/> <input type="text" name="txtCountry" id="txtCountry" class="typeahead"/>
-	</div>
+		<div class="field">
+		  <label class="label">Search Country:</label>
+		  <div class="control">
+		    <input class="input" type="text" name="companyname" id="companyname" class="typeahead" placeholder="Candidate">
+		  </div>
+		  </div>
+		</form>
+		<div>
 
-	<div class="bgcolor">
-		<label class="demo-label1">Search Country:</label><br/> <input type="text" name="leshope" id="leshope" class="typeahead"/>
-	</div>
-	<div class="bgcolor">
-		<label class="demo-label2">Search Country:</label><br/> <input type="text" name="companyname" id="companyname" class="typeahead"/>
-	</div>
+		<label class="demo-label3"></label><br/>
+		<input type="submit" name="search" value="Address Search">
+
+		</div>
 	</form>
-	<div>
-	
-	<label class="demo-label3"></label><br/>
-	<input type="submit" name="search" value="Address Search">
-	
 	</div>
-</form>
+	</div>
 	
 </body>
 <script>
